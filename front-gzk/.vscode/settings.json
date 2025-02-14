@@ -1,0 +1,9 @@
+{
+    "git.ignoreLimitWarning": true,
+    "editor.guides.indentation": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [80, 120],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#ff4081"
+    }
+}

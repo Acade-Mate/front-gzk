@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Paper Viewer</title>
+    <!-- 引入论文查看器的样式文件 -->
+    <link rel="stylesheet" href="css/paper-viewer.css">
+</head>
+<body>
+    <!-- 论文查看器的容器 -->
+    <div id="paperViewer"></div>
+    
+    <!-- 引入论文查看器的核心脚本 -->
+    <script src="js/paper-viewer.js"></script>
+    <script>
+        // 初始化论文查看器
+        const viewer = new PaperViewer('paperViewer', {
+            // 指定要加载的论文 HTML 文件
+            paperUrl: 'UniSim-paper.html',
+            // 点击高亮文本时的回调函数
+            onHighlightClick: (text, color) => {
+                console.log('Highlighted text clicked:', text);
+            }
+        });
+    </script>
+</body>
+</html>
